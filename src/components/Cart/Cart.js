@@ -14,7 +14,7 @@ function Cart(props) {
     <ul>
       {ctx.cartitemlist.map((e) => {
         price = price + parseInt(e.price) * parseInt(e.amount);
-        return <CartItem key={e.name} e={e}></CartItem>;
+        return <CartItem key={e._id} e={e}></CartItem>;
       })}
     </ul>
   );
